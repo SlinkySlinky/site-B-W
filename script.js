@@ -2,7 +2,7 @@
 const menuLinks = document.querySelectorAll('.nav__link[data-goto]')
 
 menuLinks.forEach(link => {
-    link.addEventListener('click', onLinkClick );
+    link.addEventListener('click', onLinkClick);
 });
 
 function onLinkClick(e) {
@@ -25,8 +25,19 @@ function onLinkClick(e) {
 const menuIcon = document.querySelector('.menu__icon');
 const navBox = document.querySelector('.nav__box');
 
-menuIcon.addEventListener('click', function(e) {
+menuIcon.addEventListener('click', function (e) {
     navBox.classList.toggle('_active')
     menuIcon.classList.toggle('_active')
     document.body.classList.toggle('_lock')
 });
+
+
+document.getElementById('main-button').addEventListener('click', () => {
+    window.scrollTo({
+        top: document.getElementById('contacts').getBoundingClientRect().top + pageYOffset - document.querySelector('nav').offsetHeight + 50,
+        behavior: "smooth"
+
+    });
+    e.preventDefault();
+})
+
