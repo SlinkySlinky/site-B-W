@@ -80,23 +80,28 @@ nav {
     background-color: var(--yellow);
     transition: all ease 0.3s;
     justify-content: center;
-    gap: 25px;
+    
 }
 
 .nav__link{
-    
+    margin: 0 auto;
     display:inline-block;
     text-decoration: none;
     color: var(--violet);
     font-weight: bold;
     padding: 0 10px;
+   
+}
+li{
+    text-align: center;
+    min-width: 95px;
 }
 li:nth-child(4){
-    justify-self: center;
+    min-width: auto;
 }
 
 .logo{
-   
+    margin: 0 auto;
     width: 54px;
     height:54px;
 }
@@ -110,13 +115,13 @@ li:nth-child(4){
 .menu__icon{
     display: none;
 }
-.logo--decktop{
+.logo--desktop{
     display: block;
 }
 .logo--mobile{
     display: none;
 }
-@media (max-width:600px){
+@media (max-width:620px){
 
     .logo--decktop{
         display: none;
