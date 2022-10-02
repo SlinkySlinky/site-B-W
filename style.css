@@ -72,6 +72,9 @@ nav {
     z-index: 200;
     height: 54px;
 }
+li:first-child{
+   
+}
 .nav__box{
     margin: 0 auto;
     height: 54px;
@@ -82,7 +85,7 @@ nav {
     background-color: var(--yellow);
     transition: all ease 0.3s;
     justify-content: center;
-    
+    gap: 30px;
 }
 
 .nav__link{
@@ -92,15 +95,10 @@ nav {
     color: var(--violet);
     font-weight: bold;
     padding: 0 10px;
+    
    
 }
-li{
-    text-align: center;
-    min-width: 95px;
-}
-li:nth-child(4){
-    min-width: auto;
-}
+
 
 .logo{
     margin: 0 auto;
